@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import defaultValue from '../utils/DefaultValues'
+import defaultValues from '../utils/DefaultValues'
 
 const FormUser = ({createNewUser, updateInfo, updateUserById}) => {
   const {register,handleSubmit,reset} = useForm()
@@ -18,7 +18,7 @@ const FormUser = ({createNewUser, updateInfo, updateUserById}) => {
       // Crear
       createNewUser(data)
     }
-    reset(defaultValue)
+    reset(defaultValues)
 
   }
   return (

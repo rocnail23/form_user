@@ -1,4 +1,4 @@
-const defaultValue = {
+const defaultValues = {
     email: '',
     password: '',
     first_name: '',
@@ -7,4 +7,4 @@ const defaultValue = {
                     }
 
 
-export default defaultValue
+export default defaultValues
