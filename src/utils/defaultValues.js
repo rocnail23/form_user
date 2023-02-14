@@ -3,7 +3,7 @@ const defaultValues = {
     password: '',
     first_name: '',
     last_name: '',
-    birthday: ''
+    birthday: '',
                     }
 
 
