@@ -9,13 +9,13 @@ function App() {
   const [updateInfo, setUpdateInfo] = useState()
 
   const getAllUsers = () => {
-    const url = "http://users-crud.academlo.tech/users/"
+    const url = "https://users-crud.academlo.tech/users/"
     axios.get(url)
     .then(res => setusers(res.data))
     .catch(err => console.log(err))
   }
   const createNewUser = (data) => {
-    const url = "http://users-crud.academlo.tech/users/"
+    const url = "https://users-crud.academlo.tech/users/"
     axios.post(url, data)
     .then(res => {console.log(res.data)
     getAllUsers()})
@@ -23,7 +23,7 @@ function App() {
   }
 
   const deleteUserById = (id) => {
-    const url = `http://users-crud.academlo.tech/users/${id}/`
+    const url = `https://users-crud.academlo.tech/users/${id}/`
     axios.delete(url)
     .then(res => {console.log(res)
     getAllUsers()
@@ -34,7 +34,7 @@ function App() {
   }
 
   const updateUserById = (id, data) => {
-    const url = `http://users-crud.academlo.tech/users/${id}/`
+    const url = `https://users-crud.academlo.tech/users/${id}/`
     axios.put(url, data)
       .then(res => {
         console.log(res.data)
